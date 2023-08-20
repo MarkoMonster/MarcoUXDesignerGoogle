@@ -1,0 +1,44 @@
+@import '../libs/bootstrap-5.3.1/scss/functions';
+@import '../libs/bootstrap-5.3.1/scss/variables';
+$custom-colors: (
+    "indigo":   $indigo,
+    "teal":     $teal,
+    "red":      $red,
+    "purple":   $purple,
+    "pink":     $pink,
+    "yellow":   $yellow,
+    "gray-100": $gray-100,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "gray-400": $gray-400,
+);
+$theme-colors: map-merge($theme-colors , $custom-colors );
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family-base:'Montserrat', sans-serif;
+
+
+@import '../libs/bootstrap-5.3.1/scss/bootstrap.scss';
